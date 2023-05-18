@@ -10,6 +10,10 @@ import SwiftUI
 struct MessageView: View {
     @State var time = 0.0
     @State var showMessage = true
+    
+    //MARK: Use this to only show the message once during the app lifetime in the iPhone
+    //@AppStorage("showMessage") var showMessage = true //Acts as Shared preferences
+    
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     var body : some View {

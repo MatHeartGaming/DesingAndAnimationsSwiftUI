@@ -30,22 +30,23 @@ struct ContentView: View {
             
             switch selectedMenu {
             case .compass:
-                MessageView()
+                CompassView()
             case .card:
-                Text("Card")
+                CardReflectionView()
             case .charts:
                 DetailView()
             case .radial:
-                Text("Radial")
+                RadialLayoutView()
             case .halfsheet:
                 MenuView()
             case .gooey:
                 Text("Gooey")
             case .actionbutton:
-                Text("Gooey button")
+                ActionButtonView()
             }
             
         }
+        .overlay(MessageView())
         .onTapGesture {} //Add this to avoid scroll not working
         .gesture(longPress)
         .sheet(isPresented: $showMenu) {

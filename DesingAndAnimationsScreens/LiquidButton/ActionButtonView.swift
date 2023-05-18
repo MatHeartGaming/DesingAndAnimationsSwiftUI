@@ -11,6 +11,7 @@ struct ActionButtonView: View {
     
     @State var show = false
     @State var translation : CGSize = .zero
+    @ObservedObject var manager = MotionManager()
     
     var drag : some Gesture {
         DragGesture()
@@ -31,6 +32,7 @@ struct ActionButtonView: View {
             Image("UI 1")
                 .resizable()
                 .scaledToFill()
+                .overlay(motion)
                 .cornerRadius(50)
                 .scaleEffect(show ? 0.95 : 1)
             
@@ -89,6 +91,19 @@ struct ActionButtonView: View {
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+    }
+    
+    var motion : some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 50).stroke(.linearGradient(colors: [.white.opacity(0.2), .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(manager.roll) * 5 + 1, y: abs(manager.roll) * 5 + 1)))
+            
+            LinearGradient(colors: [.clear, .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(manager.roll) * 10 + 1, y: abs(manager.roll) * 10 + 1))
+                .cornerRadius(50)
+            
+            LinearGradient(colors: [Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1))], startPoint: .topLeading, endPoint: .bottomTrailing)
+                .blendMode(.softLight)
+        }
+        .opacity(show ? 1 : 0)
     }
     
     var circle : some View {

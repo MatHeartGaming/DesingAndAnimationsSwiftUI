@@ -22,6 +22,13 @@
 		FEA169522A138ECE000F08B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA169512A138ECE000F08B7 /* ContentView.swift */; };
 		FEA169542A138ED0000F08B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA169532A138ED0000F08B7 /* Assets.xcassets */; };
 		FEA169572A138ED0000F08B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA169562A138ED0000F08B7 /* Preview Assets.xcassets */; };
+		FEF3F86F2A1612DA00710854 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3F86E2A1612DA00710854 /* MotionManager.swift */; };
+		FEF3F8712A162AFB00710854 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3F8702A162AFB00710854 /* CompassView.swift */; };
+		FEF3F8742A16300E00710854 /* CompassCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3F8732A16300E00710854 /* CompassCircles.swift */; };
+		FEF3F8782A16315D00710854 /* CircleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3F8772A16315D00710854 /* CircleLabelView.swift */; };
+		FEF3F87A2A1638A700710854 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3F8792A1638A700710854 /* LocationManager.swift */; };
+		FEF3F87D2A165C4100710854 /* CustomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3F87C2A165C4100710854 /* CustomSheet.swift */; };
+		FEF3F87F2A16618800710854 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3F87E2A16618800710854 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,13 @@
 		FEA169512A138ECE000F08B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FEA169532A138ED0000F08B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA169562A138ED0000F08B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEF3F86E2A1612DA00710854 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		FEF3F8702A162AFB00710854 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		FEF3F8732A16300E00710854 /* CompassCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassCircles.swift; sourceTree = "<group>"; };
+		FEF3F8772A16315D00710854 /* CircleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabelView.swift; sourceTree = "<group>"; };
+		FEF3F8792A1638A700710854 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FEF3F87C2A165C4100710854 /* CustomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheet.swift; sourceTree = "<group>"; };
+		FEF3F87E2A16618800710854 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +87,12 @@
 		FEA1694E2A138ECE000F08B7 /* DesingAndAnimationsScreens */ = {
 			isa = PBXGroup;
 			children = (
+				FEF3F8722A16300300710854 /* CompassView */,
 				FEA1694F2A138ECE000F08B7 /* DesingAndAnimationsScreensApp.swift */,
 				FEA169512A138ECE000F08B7 /* ContentView.swift */,
 				FE3604C72A151E7E00C298FF /* RadialLayoutView.swift */,
 				FE3604C92A152C1D00C298FF /* CardReflectionView.swift */,
-				FE3604CB2A15353C00C298FF /* ActionButtonView.swift */,
+				FEF3F87B2A1638CB00710854 /* LiquidButton */,
 				FE3604BF2A14D82100C298FF /* ChartView.swift */,
 				FE3604C12A14DB8D00C298FF /* GridView.swift */,
 				FE3604C32A14E1D100C298FF /* CardView.swift */,
@@ -98,6 +113,28 @@
 				FEA169562A138ED0000F08B7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEF3F8722A16300300710854 /* CompassView */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3F8702A162AFB00710854 /* CompassView.swift */,
+				FEF3F87E2A16618800710854 /* ButtonView.swift */,
+				FEF3F87C2A165C4100710854 /* CustomSheet.swift */,
+				FEF3F8792A1638A700710854 /* LocationManager.swift */,
+				FEF3F8772A16315D00710854 /* CircleLabelView.swift */,
+				FEF3F8732A16300E00710854 /* CompassCircles.swift */,
+			);
+			path = CompassView;
+			sourceTree = "<group>";
+		};
+		FEF3F87B2A1638CB00710854 /* LiquidButton */ = {
+			isa = PBXGroup;
+			children = (
+				FE3604CB2A15353C00C298FF /* ActionButtonView.swift */,
+				FEF3F86E2A1612DA00710854 /* MotionManager.swift */,
+			);
+			path = LiquidButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,16 +208,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEA169522A138ECE000F08B7 /* ContentView.swift in Sources */,
+				FEF3F86F2A1612DA00710854 /* MotionManager.swift in Sources */,
+				FEF3F87F2A16618800710854 /* ButtonView.swift in Sources */,
 				FE3604C42A14E1D100C298FF /* CardView.swift in Sources */,
 				FE3604BE2A14CDC200C298FF /* MenuView.swift in Sources */,
 				FE3604C82A151E7E00C298FF /* RadialLayoutView.swift in Sources */,
 				FE3604C62A14E7B200C298FF /* DetailView.swift in Sources */,
 				FE3604C22A14DB8D00C298FF /* GridView.swift in Sources */,
 				FE3604B82A14C6AE00C298FF /* NavigationStackView.swift in Sources */,
+				FEF3F87A2A1638A700710854 /* LocationManager.swift in Sources */,
 				FE3604CC2A15353D00C298FF /* ActionButtonView.swift in Sources */,
 				FE3604C02A14D82100C298FF /* ChartView.swift in Sources */,
+				FEF3F8742A16300E00710854 /* CompassCircles.swift in Sources */,
+				FEF3F8782A16315D00710854 /* CircleLabelView.swift in Sources */,
 				FEA169502A138ECE000F08B7 /* DesingAndAnimationsScreensApp.swift in Sources */,
 				FE3604BA2A14C86000C298FF /* Data.swift in Sources */,
+				FEF3F87D2A165C4100710854 /* CustomSheet.swift in Sources */,
+				FEF3F8712A162AFB00710854 /* CompassView.swift in Sources */,
 				FE3604BC2A14CCE100C298FF /* MessageView.swift in Sources */,
 				FE3604CA2A152C1D00C298FF /* CardReflectionView.swift in Sources */,
 			);
@@ -314,6 +358,7 @@
 				DEVELOPMENT_TEAM = T3Y3F3RZUZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use longitude and latitude for Compass App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +389,7 @@
 				DEVELOPMENT_TEAM = T3Y3F3RZUZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use longitude and latitude for Compass App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
